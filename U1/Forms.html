@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample_Form</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        form{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 6px;
+            background-color: aliceblue;
+        }
+
+button {
+  font-size: 1.4em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.5em;
+  border: none;
+  /* background-color: #ffffff; */
+  color: #000000;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #000000b4;
+}
+
+.container {
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  border-radius: 0.9em;
+  transition: all 0.4s ease;
+  width: max-content;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.9em;
+  z-index: -10;
+  filter: blur(0);
+  transition: filter 0.4s ease;
+}
+
+.container:hover::before {
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  filter: blur(1.2em);
+}
+.container:active::before {
+  filter: blur(0.2em);
+}
+
+    </style>
+</head>
+<body>
+    <center>
+    <form action="Welcome.html" method="POST">
+        <label for="">Name:</label>
+        <input type="text" name="name"><br><br>
+        <label for="ph">Ph no:</label>
+        <input type="number" name="number"><br><br>
+        <label for="">Email:</label>
+        <input type="email" name="email"><br><br><br>
+        <!-- <input type="submit" value="Submit"> -->
+        <div class="container">
+            <button class="button">Submit</button>
+        </div>
+    </form>
+    </center>
+</body>
+</html>
