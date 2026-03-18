@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(70, 70, 70); */
+}
+p{
+    color:blue;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color:red;
+    font-weight: bolder;
+}
+h1{
+    color:rgb(110, 109, 109);
+    text-align: center;
+    font-weight: bolder;
+}
+#ref{
+    color:blue;
+    background-color: transparent;
+    border:0px;
+    text-decoration: underline;
+    align-self: center;
+}
+h6{
+    font-size: large;
+    text-align: center;
+    color: grey;
+}
