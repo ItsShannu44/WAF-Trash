@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+    font-family: serif;
+}
+
+.form-box{
+    background:#ffbcbc;
+    padding:40px 60px;
+    width:500px;
+    height:max-content;
+}
+
+h1{
+    text-align:center;
+}
+
+input, select, textarea{
+    margin:5px;
+}
+
+textarea{
+    width:250px;
+    height:80px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="form-box">
+<h1>Student Registration Form</h1>
+
+<form>
+
+Roll no. :
+<input type="text"><br><br>
+
+Student name :
+<input type="text" placeholder="First Name">
+-
+<input type="text" placeholder="Last Name"><br><br>
+
+Father's name :
+<input type="text"><br><br>
+
+Date of birth :
+<input type="text" size="3" placeholder="Day"> -
+<input type="text" size="5" placeholder="Month"> -
+<input type="text" size="6" placeholder="Year">
+(DD-MM-YYYY)<br><br>
+
+Mobile no. :
+<input type="text" value="+91" size="3"> -
+<input type="text"><br><br>
+
+Email id :
+<input type="email"><br><br>
+
+Password :
+<input type="password"><br><br>
+
+Gender :
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female<br><br>
+
+Department :
+<input type="checkbox"> CSE
+<input type="checkbox"> IT
+<input type="checkbox"> ECE
+<input type="checkbox"> Civil
+<input type="checkbox"> Mech<br><br>
+
+Course :
+<select>
+<option>---------------- Select Current Course's ----------------</option>
+<option>BCA</option>
+<option>BSc</option>
+<option>BTech</option>
+</select><br><br>
+
+Student photo :
+<input type="file"><br><br>
+
+City :
+<input type="text"><br><br>
+
+Address :
+<br>
+<textarea></textarea><br>
+
+<center>
+<input type="submit" value="Register">
+</center>
+
+</form>
+</div>
+
+</body>
+</html>
