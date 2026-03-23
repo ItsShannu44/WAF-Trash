@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        .container{
+            background-color: rgb(210, 234, 255);
+            height:95vh;
+            width:100vw;
+        }
+        *{
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+        body{
+            border: 5px solid white;
+        }
+        ul li{
+            font-size: 20px;
+            font-weight: bold;
+            list-style-type: disc;
+            color:black;
+        }
+        ul .differ{
+            color:red;
+            background-color: rgb(255, 255, 118);
+            width:max-content;
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello</h1>
+        <ul>
+            <li class="differ">first</li>
+            <li>second</li>
+        </ul>
+        <p style="text-decoration: line-through; font-size: 20px;">WEB</p>
+        <p style="font-style: small-caps;">WEB</p>
+    </div>
+</body>
+</html>
