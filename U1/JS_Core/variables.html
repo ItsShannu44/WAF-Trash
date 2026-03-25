@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables js</title>
+</head>
+<body>
+    <p id="debugg"></p>
+    <script>
+        let a=10;
+        let b=5;
+        b=50;
+        document.writeln("value of a="+ a);
+        document.writeln("value of b="+ b + "<br>");
+        document.writeln("the updated val of b"+b +"<br><br>");
+        console.log("Var a=", +a);
+        console.log("Hey i am debugging");
+        document.getElementById("debugg").innerHTML=("<p>Hello the val is: <p>" + b);
+        document.getElementById("debugg").innerHTML=("<p>Hello the val is: <p>" + a);
+
+        var res="";
+        res= res+ isNaN("")+ ": emptystring <br>"; // false
+        res= res+ isNaN(123)+ ": 123 <br>"; //false
+        res= res+ isNaN("123") + " : \"123\" <br>"; //false
+        res= res+ isNaN("abc") + " : \"abc\" <br>"; //true
+        res= res+ isNaN("10a") + " : \"10a\" <br> <br>"; //true
+        document.write(res);
+        document.write(typeof(res)+"<br>"); //returns the datatype
+
+        let bool= true;
+        let undef;
+        let n=null;
+        let f=20.5;
+
+        document.write(typeof(bool )+"<br>");
+        document.write(typeof(undef)+"<br>");
+        document.write(typeof(n));
+    </script>
+</body>
+</html>
