@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Only Validation</title>
+</head>
+<body>
+
+    <form onsubmit="return validateForm()">
+        <input type="text" id="userInput" placeholder="Enter text" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            const input = document.getElementById("userInput").value;
+            const letters = /^[A-Za-z]+$/;
+
+            if (input.match(letters)) {
+                alert("Success!.");
+                return true;
+            } else {
+                alert("Error..");
+                return false; 
+            }
+        }
+    </script>
+</body>
+</html>
