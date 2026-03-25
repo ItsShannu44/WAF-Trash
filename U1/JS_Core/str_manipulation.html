@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Str Manip</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+    let str= "Hello World";
+    let len=str.length;
+    let char=str.charAt(1);
+    let index=str.indexOf("l");
+    let lastindex=str.lastIndexOf("l");
+    let substring=str.substring(0,5);
+    let slice=str.slice(6, 11);
+    let upper=str.toUpperCase();
+    let lower=str.toLowerCase();
+    let replace= str.replace("World", "js");
+    let concat=str.concat("!!!");
+    let trim=" Hi  ".trim();
+
+            document.getElementById("result").innerHTML = `
+            Original String: "${str}"<br>
+            Length: ${len}<br>
+            charAt(1): ${char}<br>
+            indexOf("l"): ${index}<br>
+            lastIndexOf("l"): ${lastindex}<br>
+            substring(0,5): "${substring}"<br>
+            slice(6, 11): "${slice}"<br>
+            toUpperCase(): "${upper}"<br>
+            toLowerCase(): "${lower}"<br>
+            replace("World", "js"): "${replace}"<br>
+            concat("!!!"): "${concat}"<br>
+            trim(): "${trim}"
+        `;
+    </script>
+</body>
+</html>
