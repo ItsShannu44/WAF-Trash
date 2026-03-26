@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let list=[30,50,20];
+        document.write("Original Array:"+list+"<br>");
+
+        list.push(60);
+        document.write("After Push(60):"+list+"<br>");
+
+        list.pop();
+        document.write("After Pop():"+list+"<br>");
+
+        list.unshift(5);
+        document.write("After unshift(5):"+list+"<br>");
+
+        list.shift();
+        document.write("After shift():"+list+"<br>");
+
+        list.sort();
+        document.write("Sorted Array:"+list+"<br>");
+
+        list.reverse();
+        document.write("Reversed Array:"+list+"<br>");
+    </script>
+</body>
+</html>
