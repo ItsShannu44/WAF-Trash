@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SRN Form</title>
+    <title>SRN Validation</title>
 
     <script>
 
-        function checkData()
+        function check()
         {
-            var s = document.getElementById("srn").value;
+            var srn = document.getElementById("srn").value;
             var sem = document.getElementById("sem").value;
-            var pattern = /^[0-9][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]$/;
-            if(s == "")
+
+            var pattern = /^PES[0-9]PG[0-9][0-9]CA[0-9][0-9][0-9]$/;
+
+            if(srn == "")
             {
-                alert("Enter SRN first");
+                alert("Enter SRN");
                 return false;
             }
 
-            if(!pattern.test(s))
+            if(!pattern.test(srn))
             {
-                alert("SRN format wrong");
+                alert("Invalid SRN\nExample: PES1PG25CA197");
                 return false;
             }
 
@@ -30,11 +32,11 @@
 
             if(sem < 1 || sem > 4)
             {
-                alert("Semester should be 1 to 4 only");
+                alert("Semester must be 1 to 4");
                 return false;
             }
 
-            alert("Data is correct");
+            alert("Valid Details");
             return true;
         }
 
@@ -43,14 +45,16 @@
 </head>
 
 <body>
-    <h3>SRN Validation Program</h3>
-    <form onsubmit="return checkData()">
 
-        SRN :
+    <h3>SRN Validation Form</h3>
+
+    <form onsubmit="return check()">
+
+        Enter SRN:
         <input type="text" id="srn">
         <br><br>
 
-        Semester :
+        Enter Semester:
         <input type="number" id="sem">
         <br><br>
 
