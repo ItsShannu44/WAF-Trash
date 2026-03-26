@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Question 3</title>
+</head>
+<body>
+
+<h2>Question 3 Programs</h2>
+
+<button onclick="arrayOps()">Array Operations</button>
+<button onclick="twoD()">2D Array</button>
+
+<script>
+
+function arrayOps(){
+
+    let arr = [1,2,3];
+    let choice = prompt("1.Insert  2.Object Array  3.Length");
+
+    switch(choice){
+
+        case "1":
+            let val = prompt("Enter value");
+            arr.push(val);
+            alert(arr);
+            break;
+
+        case "2":
+            let objArr = [
+                {name:"Ram"},
+                {name:"Shyam"}
+            ];
+            alert(JSON.stringify(objArr));
+            break;
+
+        case "3":
+            alert("Length = " + arr.length);
+            break;
+
+        default:
+            alert("Invalid");
+    }
+}
+
+function twoD(){
+    let arr = [
+        [1,2,3],
+        [4,5,6]
+    ];
+
+    let output="";
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<arr[i].length;j++){
+            output += arr[i][j] + " ";
+        }
+        output += "\n";
+    }
+
+    alert(output);
+}
+
+</script>
+</body>
+</html>
