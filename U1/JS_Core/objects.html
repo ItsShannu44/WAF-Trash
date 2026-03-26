@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style>
+        .cont
+        {
+            border:1px solid black;
+            padding:10px;
+            margin:20px;
+            border-radius: 15px;
+        }
+        .cont h3{
+            background-color: aquamarine;
+            padding:15px;
+            text-align: center;
+        }   
+        .cont1
+        {
+            border:1px solid black;
+            padding:10px;
+            margin:20px;
+            border-radius: 15px;
+        }
+        .cont1 h3{
+            background-color: rgb(151, 191, 255);
+            padding:15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Javascript Objects Access Demo</h2>
+    <div class="cont"> 
+        <h3>Object Literal Example</h3>
+        <p id="data1">This is a first line text</p>
+    </div>
+    <div class="cont1">
+        <h3>Object Method Example</h3>
+         <p id="data2"></p>
+        
+    </div>
+    <script>
+        const data={};
+        data.fname= "Its";
+        data.lname= "Shannu";
+        document.getElementById("data1").innerHTML="The name is " +data.fname+ data.lname ;
+
+        const data_1={  
+        fname: "Its",
+        lname:"Pavan",
+        fullname:function()
+        {
+            return this.fname +"" +this.lname;
+        }
+        }
+        document.getElementById("data2").innerHTML="The name is " +data_1.fullname() ;
+    </script>
+</body>
+</html>
