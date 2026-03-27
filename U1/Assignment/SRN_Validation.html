@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SRN Validation</title>
+
+    <script>
+
+        function check()
+        {
+            var srn = document.getElementById("srn").value;
+            var sem = document.getElementById("sem").value;
+
+            var pattern = /^PES[0-9]PG[0-9][0-9]CA[0-9][0-9][0-9]$/;
+
+            if(srn == "")
+            {
+                alert("Enter SRN");
+                return false;
+            }
+
+            if(!pattern.test(srn))
+            {
+                alert("Invalid SRN\nExample: PES1PG25CA197");
+                return false;
+            }
+
+            if(sem == "")
+            {
+                alert("Enter semester");
+                return false;
+            }
+
+            if(sem < 1 || sem > 4)
+            {
+                alert("Semester must be 1 to 4");
+                return false;
+            }
+
+            alert("Valid Details");
+            return true;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h3>SRN Validation Form</h3>
+
+    <form onsubmit="return check()">
+
+        Enter SRN:
+        <input type="text" id="srn">
+        <br><br>
+
+        Enter Semester:
+        <input type="number" id="sem">
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
