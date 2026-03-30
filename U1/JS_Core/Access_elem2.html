@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border:1px solid black;
+            padding:8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="example_clr">
+        <p>This is a paragraph 1.</p>
+    </div><br>
+    <div class="example_clr">
+        <p>This is a paragraph 2.</p>
+    </div>
+    <script>
+        const coll=document.getElementsByClassName("example_clr");
+        coll[0].style.backgroundColor="beige";
+        coll[1].style.backgroundColor="yellow";
+    </script>
+</body>
+</html>
