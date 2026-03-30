@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Cats:
+    <input type="checkbox" name="animal" value="Cats">
+    Dogs:
+    <input type="checkbox" name="animal" value="Dogs">
+    <p>Check the checkboxes that have a name="animal":</p>
+    <script>
+        const coll=document.getElementsByName("animal");
+        for (let i=0; i<coll.length;i++)
+        {
+            if(coll[i].type=="checkbox")
+            {
+                coll[i].checked=true;
+            }
+        }
+    </script>
+</body>
+</html>
