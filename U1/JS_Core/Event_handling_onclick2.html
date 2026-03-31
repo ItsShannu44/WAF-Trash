@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Select a Laptop Type</h4>
+    <form id="myForm" action="">
+        <p>
+            <label for="">
+                <input type="radio" name="laptop" value="1" onclick="laptopChoice(1)">Gaming Laptop
+            </label> <br>
+            <label for="">
+                <input type="radio" name="laptop" value="2" onclick="laptopChoice(2)">Office Laptop
+            </label><br>
+            <label for="">
+                <input type="radio" name="laptop" value="3" onclick="laptopChoice(3)">Business Laptop
+            </label><br>
+            <label for="">
+                <input type="radio" name="laptop" value="4" onclick="laptopChoice(4)">PC
+            </label> 
+        </p>
+    </form>
+    <script>
+        function laptopChoice(ch){
+            switch(ch){
+                case 1:
+                    alert("laptop 1");
+                    break;
+                case 2:
+                    alert("laptop 2");
+                    break;
+                case 3:
+                    alert("laptop 3");
+                        break;
+                case 4: 
+                    alert("laptop 4");
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
