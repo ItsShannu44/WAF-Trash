@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password matching</title>
 </head>
 <body>
     <form id="myForm" action="" onsubmit="return checkPwd()">
@@ -13,7 +13,9 @@
         </label><br><br>
         <label for="">Verify Password
         <input type="password" id="second" size="10"/>
-        </label>
+        </label><br><br>
+        <input type="reset" id="reset" value="Reset">
+        <input type="submit" id="submit" value="Submit">
         </p>
     </form>
     <script>
@@ -22,13 +24,19 @@
             var sec=document.getElementById("second");
             if(init.value=="")
             {
-                alert("Please enter a passord\n Please enter now..");
+                alert("Please enter a password");
                 init.focus();
                 return false;
             }
             if(init.value!=sec.value)
             {
-                
+                alert("password is not matching");
+                sec.focus();
+                return false;
+            }
+            else{
+                alert("Submitted");
+
             }
         }
     </script>
