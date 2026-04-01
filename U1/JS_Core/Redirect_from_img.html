@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect from img</title>
+    <script>
+        function password(){
+            ret=prompt('type the word castle',"");
+            if(ret== "castle")
+        {
+            location='date.html';
+        }else{
+            alert("please try again");
+        }
+        }
+    </script>
+</head>
+<body>
+    <h3>click the image to enter a password protected document.try a wrong entry first. <br><br>
+        <a href="javascript:password()">
+            <img src="1.jpg" alt="pict" name="picture-password" align="center" border="0" width="500" height="300">
+        </a>
+    </h3>
+</body>
+</html>
