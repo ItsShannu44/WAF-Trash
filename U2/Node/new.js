@@ -6,3 +6,10 @@ function say(message="Hey"){
 }
 say();
 say("Heyyyy");
+
+//rest parameter
+function fn(a,b,...args){
+    console.log(a);
+    console.log(args);
+}
+fn(1, 2, 3, "A", "B", "C", "D");
