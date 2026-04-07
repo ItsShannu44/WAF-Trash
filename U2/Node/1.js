@@ -64,3 +64,12 @@ for(let score of scores){
     score+=5;
     console.log(score);
 }
+
+
+// For..in loop
+let score=[20,40,78];
+
+for(let score in scores){
+    score+=5;
+    console.log(score);
+}
