@@ -1,6 +1,7 @@
 var msg="hii"
 console.log(msg);
 
+//Default Parameter
 function say(message="Hey"){
     console.log(message);
 }
