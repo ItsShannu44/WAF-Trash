@@ -52,3 +52,15 @@ console.log(m2);
 
 const m3= createMachine("Drill", "Active");
 const m4=createMachine("Lathe", "InActive");
+
+
+
+
+
+// For..of loop
+let scores=[20,40,78];
+
+for(let score of scores){
+    score+=5;
+    console.log(score);
+}
