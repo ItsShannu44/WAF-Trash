@@ -13,3 +13,4 @@ function fn(a,b,...args){
     console.log(args);
 }
 fn(1, 2, 3, "A", "B", "C", "D");
+
