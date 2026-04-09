@@ -12,3 +12,8 @@ console.log(addition(10,50));
 // {
 //     this.name=name;
 // }
+
+//Consice with the arrow function syntax
+let numbers=[4,2,6];
+numbers.sort((a,b)=>b-a);
+console.log(numbers);
