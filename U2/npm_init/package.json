@@ -5,7 +5,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "shannu",
   "license": "ISC",
-  "description": ""
+  "description": "sample one",
+  "repository": {
+    "type": "git",
+    "url": "no repo"
+  },
+  "keywords": [
+    "new",
+    "package",
+    "file"
+  ]
 }
