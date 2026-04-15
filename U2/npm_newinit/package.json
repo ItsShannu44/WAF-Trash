@@ -1,0 +1,22 @@
+{
+  "name": "npm_newinit",
+  "version": "1.0.0",
+  "description": "custom  package",
+  "main": "index.js",
+  "scripts": {
+    "test": "new json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm/packages.git"
+  },
+  "keywords": [
+    "pkg"
+  ],
+  "author": "shannu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npm/packages/issues"
+  },
+  "homepage": "https://github.com/npm/packages#readme"
+}
