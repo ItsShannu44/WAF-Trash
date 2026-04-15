@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDN 1</title>
         <!-- <script src="https://babeljs.io/docs/"></script> -->
-    <script src="https://unpkg.com/@label/standalone/babel.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- ReactDOM -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
     <div id="contents"></div>
-    <script >
-        const element=(
-            <div title="outer div">
+   <script type="text/babel">
+        const element = ( 
+            <div title="Outer div">
                 <h1>Hello World!</h1>
             </div>
         );
-        ReactDOM.render(element, document.getElementById('contents'));
+
+        const root = ReactDOM.createRoot(document.getElementById('contents'));
         root.render(element);
     </script>
 </body>
