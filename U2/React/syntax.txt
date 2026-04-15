@@ -1,0 +1,9 @@
+// Serverless Hello World App
+
+React.createElement(type, [props],[...children])
+...
+const element = React.createElement('div',{title: 'Outer div'},
+    React.createElement('h1', null, 'Hello World!')
+);
+...
+
