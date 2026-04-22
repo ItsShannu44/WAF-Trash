@@ -2,7 +2,7 @@
 import './App.css';
 import Greeting from './Greeting';
 
-function App() {
+function App_old() {
 
 
   // return (
@@ -41,7 +41,7 @@ function App() {
 
   
   return(
-    <div className='App'>
+    <div className='App_old'>
       <Greeting name="Vaibee"/>
       {/* <Greeting name="Max"/> */}
     </div>
@@ -49,4 +49,4 @@ function App() {
 
 }
 
-export default App;
+export default App_old;
