@@ -4,10 +4,12 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Greeting from './Greeting';
-import App from './Appcomposing';
+// import App from './Appcomposing';
+import BookApp from './Appprops';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App/>);
+root.render(<BookApp/>);
 // root.render(<React.StrictMode><App/></React.StrictMode>);
 /*
 const x=5;
