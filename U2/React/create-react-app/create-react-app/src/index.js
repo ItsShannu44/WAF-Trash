@@ -5,11 +5,12 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import Greeting from './Greeting';
 // import App from './Appcomposing';
-import BookApp from './Appprops';
+// import BookApp from './Appprops';
+import App from './AppDynamic';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<BookApp/>);
+root.render(<App/>);
 // root.render(<React.StrictMode><App/></React.StrictMode>);
 /*
 const x=5;
