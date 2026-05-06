@@ -1,7 +1,7 @@
 import React from "react"
 
 function Child(props){
-    return<h2>Message from Parent: {props.message}</h2>;
+    return<h2 align="center">Message from Parent: {props.message}</h2>;
 }
 
 function App()
