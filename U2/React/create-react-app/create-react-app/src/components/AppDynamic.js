@@ -1,5 +1,5 @@
 import React from 'react';
-import  BookTable from './components/BookTable';
+import  BookTable from './BookTable';
 
 function App()
 {

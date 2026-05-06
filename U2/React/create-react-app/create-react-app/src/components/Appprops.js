@@ -1,5 +1,5 @@
 import React from 'react';
-import BookClass from "./components/BookClass";
+import BookClass from "./BookClass";
 // import Book from "./components/Book";
 // import img from './img/1.jpg'
 // import img2 from './img/2.jpg'
