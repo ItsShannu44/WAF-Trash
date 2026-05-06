@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 // import Greeting from './Greeting';
 // import App from './Appcomposing';
 // import BookApp from './Appprops';
-import App from './AppDynamic';
+// import App from './AppDynamic';
+import App from './components/Prop.js'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
