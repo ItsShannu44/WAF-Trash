@@ -9,7 +9,8 @@ import reportWebVitals from './reportWebVitals';
 // import App from './AppDynamic';
 // import App from './components/Prop.jsx'
 // import App from "./components/CounterClass.jsx"
-import App from "./components/App_State.jsx"
+// import App from "./components/App_State.jsx"
+import App from "./App_Country.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App/>);
