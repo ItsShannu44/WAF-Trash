@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -42,4 +42,124 @@ input{
     transform: rotate(360deg);
   }
 }
+ */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@300;400&display=swap');
+
+:root {
+  --paper: #f4f1ea;
+  --ink: #111;
+  --sub-ink: #444;
+  --line: #bbb;
+}
+
+/* Page */
+body {
+  background: #e6e2d9;
+}
+
+/* Newspaper container */
+.newspaper {
+  width: min(1100px, 95%);
+  margin: 30px auto;
+  padding: 30px;
+
+  background: var(--paper);
+  color: var(--ink);
+
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+
+  font-family: 'Merriweather', serif;
+}
+
+/* Masthead */
+.masthead {
+  text-align: center;
+  border-bottom: 4px double var(--ink);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.masthead h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.edition {
+  font-size: 0.9rem;
+  color: var(--sub-ink);
+  margin-top: 5px;
+}
+
+/* Grid Layout */
+.news-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* Articles */
+.news {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.news h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.news p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--sub-ink);
+}
+
+/* MAIN HEADLINE */
+.news.main {
+  grid-row: span 2;
+}
+
+.news.main h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Drop cap effect */
+.news.main p::first-letter {
+  float: left;
+  font-size: 3rem;
+  line-height: 1;
+  padding-right: 8px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Divider lines */
+.news:not(.main) {
+  border-bottom: 1px dashed var(--line);
+  padding-bottom: 10px;
+}
+
+/* Hover (subtle) */
+.news:hover h2 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news.main {
+    grid-row: span 1;
+  }
+}
