@@ -30,5 +30,12 @@ class App extends React.Component{
         const filteredCountries= this.state.countries.filter(c=>
             c.name.toLowerCase().includes(this.state.filterText.toLowerCase())
         );
+
+        return(
+            <div className='App'>
+                <h1>Country Tracker</h1>
+                
+            </div>
+        )
     }
 }
