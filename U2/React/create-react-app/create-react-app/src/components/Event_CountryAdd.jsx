@@ -11,7 +11,11 @@ class CountryAdd extends React.Component{
         e.preventDefault();
         if(!this.state.name || !this.state.region) return;
         this.props.addCountry({
-            name: 
-        })
+            name: this.state.name,
+            region: this.state.region
+        });
+        this.setState({
+            
+        });
     }
 }
