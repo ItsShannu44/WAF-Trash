@@ -11,7 +11,7 @@ import reportWebVitals from './reportWebVitals';
 // import App from "./components/CounterClass.jsx"
 // import App from "./components/App_State.jsx"
 // import App from "./App_News";
-import App from "./App_Country"
+import App from "./App_Event"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App/>);
