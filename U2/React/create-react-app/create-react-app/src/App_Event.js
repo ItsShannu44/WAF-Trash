@@ -34,8 +34,12 @@ class App extends React.Component{
         return(
             <div className='App'>
                 <h1>Country Tracker</h1>
-                
+                <CountryFilter setFilterText={this.setFilterText}/>
+                <hr/>
+                <CountryTable countries={filteredCountries}/>
+                <hr/>
+                <CountryAdd addCountry={this.addCountry}/>
             </div>
-        )
+        );
     }
 }
