@@ -14,8 +14,10 @@ class CountryAdd extends React.Component{
             name: this.state.name,
             region: this.state.region
         });
+        //clear form
         this.setState({
-            
+            name: "",
+            region:""
         });
     }
 }
