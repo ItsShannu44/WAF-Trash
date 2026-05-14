@@ -10,6 +10,8 @@ function Parent()
         <div>
             <h2>Parent component</h2>
             <p>Data received from child: <strong>{receivedData}</strong></p>
+            <Child onSentData={handleDataFromChild}/>
         </div>
-    )
+    );
 }
+export default Parent;
