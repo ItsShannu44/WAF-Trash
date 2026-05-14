@@ -3,7 +3,7 @@ import React from "react";
 class CountryTable extends React.Component{
     render(){
         return(
-            <div>
+            <div className="Table">
                 <h3>Country List</h3>
                 <ul>
                     {this.props.countries.map((c, index)=>(
@@ -14,3 +14,4 @@ class CountryTable extends React.Component{
         );
     }
 }
+export default CountryTable;

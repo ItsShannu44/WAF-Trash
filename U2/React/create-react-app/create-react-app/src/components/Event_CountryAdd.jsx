@@ -25,12 +25,12 @@ class CountryAdd extends React.Component{
         <div>
             <h3>Add Country</h3>
             <form onSubmit={this.handleSubmit}>
-                <input type="text" placeholder="Country Name" value={this.state.name} onChange={(e) => this.setState({name: e.target.value})}/>
-                <input type="text" placeholder="Region" value={this.state.region} onChange={(e) => this.setState({region: e.target.value})}/>
+                <input type="text" placeholder="Country Name" value={this.state.name} onChange={(e) => this.setState({name: e.target.value})}/><br/>
+                <input type="text" placeholder="Region" value={this.state.region} onChange={(e) => this.setState({region: e.target.value})}/><br/>
                 <button type="submit">Add</button>
             </form>
         </div>
         );
     };
 }
-export default CountryAdd
+export default CountryAdd;

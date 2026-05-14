@@ -1,6 +1,6 @@
 import './Event_App.css';
 import React from 'react';
-import CountryFilter from  "./components/Event_Country";
+import CountryFilter from  "./components/Event_CountryFilter";
 import CountryTable from './components/Event_CountryTable';
 import CountryAdd from './components/Event_CountryAdd';
 
@@ -12,7 +12,7 @@ class App extends React.Component{
             countries: [
                 {name: "India", region: "Asia"},
                 { name: "USA", region: "America"},
-                { name: "Germanny", region: "Europe"}
+                { name: "Germany", region: "Europe"}
             ],
             filterText: ""
         };
@@ -43,3 +43,4 @@ class App extends React.Component{
         );
     }
 }
+export default App;
