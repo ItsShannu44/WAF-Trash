@@ -4,7 +4,8 @@ import './index.css';
 // import App from './components/Increment_Decrement'
 // import App from './components/Dynamic_Row'
 // import App from './components/Add_Btn_Event'
-import App from './components/Lifting_Up'
+// import App from './components/Lifting_Up'
+import App from './components/Student_Attendance'
 
 import reportWebVitals from './reportWebVitals';
 
