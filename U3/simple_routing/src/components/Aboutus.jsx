@@ -1,10 +1,10 @@
 import React from 'react';
 
-const About=() =>{
+const Aboutus=() =>{
     return(
         <div className='container' style={pageStyle}>
-            <h4 className='center'>Home</h4>
-            <p>My home page content is here</p>
+            <h4 className='center'>About</h4>
+            <p>My about page content is here</p>
         </div>
     );
 };
