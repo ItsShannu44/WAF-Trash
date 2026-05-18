@@ -13,4 +13,4 @@ const pageStyle={
     color:'black',
     padding: 'o.10em'
 };
-export default About;
+export default Aboutus;
