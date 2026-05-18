@@ -9,8 +9,8 @@ const Aboutus=() =>{
     );
 };
 const pageStyle={
-    background: 'skyblue',
-    color:'maroon',
+    background: 'grey',
+    color:'black',
     padding: 'o.10em'
 };
 export default About;
