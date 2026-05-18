@@ -10,7 +10,17 @@ function App()
 {
   return(
     <div className="App">
-        
+        <BrowserRouter>
+          <header className="App-header">
+            <Navbar/>
+          </header>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/aboutus" element={<Aboutus/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path="*" element={<NoPage/>}/>
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
