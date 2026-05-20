@@ -11,6 +11,6 @@ const Aboutus=() =>{
 const pageStyle={
     background: 'grey',
     color:'black',
-    padding: 'o.10em'
+    padding: '0.10em'
 };
 export default Aboutus;
