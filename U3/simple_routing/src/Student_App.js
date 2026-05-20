@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Student from "./components/Student";
 import New_Home from "./components/Stu_Home";
+import Home from "./components/Home_UserInput"
 
 function App()
 {
