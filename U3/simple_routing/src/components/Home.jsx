@@ -14,4 +14,5 @@ const pageStyle={
     color:'maroon',
     padding: 'o.10em'
 };
+
 export default Home;
