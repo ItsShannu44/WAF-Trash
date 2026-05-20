@@ -15,7 +15,11 @@ function App()
                 <Link to="/student/103">SRN 103</Link>
             </nav>
             <hr/>
-            
+            <Routes>
+                <Route path="/" element= {<Home/>}/>
+                <Route path="/student/:id" element= {<Student/>}/>
+            </Routes>
         </BrowserRouter>
     );
 }
+export default App;
