@@ -37,3 +37,4 @@ function Student(){
         </div>
     );
 }
+export default Student;
