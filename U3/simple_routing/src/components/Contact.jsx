@@ -11,6 +11,6 @@ const Contact=() =>{
 const pageStyle={
     background: 'skyblue',
     color:'maroon',
-    padding: 'o.10em'
+    padding: '0.10em'
 };
 export default Contact;
