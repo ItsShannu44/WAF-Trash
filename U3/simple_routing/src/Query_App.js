@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import Student from "./components/Student";
-// import New_Home from "./components/Stu_Home";
-import Home from "./components/Home_UserInput"
+import Student from "./components/Query_Student";
+import New_Home from "./components/Query_Home";
+import Home from "./components/Query_Home"
 
 function App()
 {
     return(
         <BrowserRouter>
+        <center>
             <h1>Student Record System</h1>
 
             <nav>
@@ -22,8 +23,9 @@ function App()
 
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/student/:id" element={<Student/>}/>
+                <Route path="/student" element={<Student/>}/>
             </Routes>
+            </center>
         </BrowserRouter>
     );
 }
