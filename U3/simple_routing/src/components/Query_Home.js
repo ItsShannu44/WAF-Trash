@@ -19,3 +19,4 @@ const pageStyle={
     padding: '0.10rem'
 };
 export default New_Home;
+
