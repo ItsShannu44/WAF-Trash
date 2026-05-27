@@ -10,14 +10,17 @@ function App(){
             <header className="App-header"></header>
             <MyButton/>
             <hr/>
-            <ButtonOutline/>
+            {/* <ButtonOutline/>
             <hr/>
             <NavigationBar/>
             <hr/>
             <MyCard/>
             <hr/>
             <MyForm/>
+            <hr/> */}
+            <MyAlert/>
             <hr/>
+            <MyModel/>
         </div>
     );
 }
