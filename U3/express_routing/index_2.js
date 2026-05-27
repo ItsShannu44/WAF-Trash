@@ -2,7 +2,7 @@ var express= require('express');
 var app=express();
 var PORT=3000;
 
-app.get('/', function(req, res){
+app.post('/', function(req, res){
     console.log('Got a post request for the homepage');
     res.send('Post Page');
 });
