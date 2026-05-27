@@ -30,14 +30,33 @@ const router3= express.Router();
 
 router0.get('/', function( req, res, next){
     console.log("Home Page for section A");
-    res.send("Home Page for section A")
+    res.send("Home Page for section A");
 });
 router1.get('/user', function( req, res, next){
     console.log("Home Page for section B");
-    res.send("Home Page for section B")
+    res.send("Home Page for section B");
 });
 
-router2.get('/', function( req, res, next){
+router2.get('/admin', function( req, res, next){
     console.log("Home Page for section C");
-    res.send("Home Page for section C")
+    res.send("Home Page for section C");
+});
+
+router3.get('/student', function( req, res, next){
+    console.log("Home Page for section D");
+    res.send("Home Page for section D");
+});
+
+app.use(router0);
+app.use(router1);
+app.use(router2);
+app.use(router3);
+
+app.listen(PORT, (err)=>{
+    if(err)
+    {
+        console.error("Error starting server:", err);
+    }else{
+        console.log(`Server listening on PORT ${PORT}`);
+    }
 });
