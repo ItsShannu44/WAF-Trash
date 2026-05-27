@@ -1,9 +1,10 @@
 var express= require('express');
 var app=express();
+var PORT=3000;
 
 app.post('/', function(req, res){
     console.log('Got a post request for the homepage');
-    res.send('Post PAge');
+    res.send('Post Page');
 });
 
 app.delete('/del_student', function(req, res){
@@ -19,5 +20,5 @@ app.get('/enrolled_student', function(req, res){
 var server= app.listen(3000,function(){
     var host=server.address().address
     var port=server.address().port
-    console.log('Example app listening at http://%s:%s',host,port);
+    console.log('Example app listening at http://%s:%s',host,port)
 })
