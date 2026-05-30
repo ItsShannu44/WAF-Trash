@@ -1,12 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
-import Employee from "./components/Emp_Status";
+import App from "./components/";
 
-function App() {
+function My_App() {
   return (
     <BrowserRouter>
-      <Employee />
+      <App />
     </BrowserRouter>
   );
 }
 
-export default App;
+export default My_App;
