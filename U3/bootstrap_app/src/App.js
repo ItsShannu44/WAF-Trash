@@ -1,10 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
-import Product from "./components/Product_Search";
+import Employee from "./components/Emp_Status";
 
 function App() {
   return (
     <BrowserRouter>
-      <Product />
+      <Employee />
     </BrowserRouter>
   );
 }
