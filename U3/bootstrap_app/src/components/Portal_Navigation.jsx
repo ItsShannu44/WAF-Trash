@@ -40,7 +40,7 @@ function Navigation({ username, count }) {
 }
 
 export default function App() {
-  const [username] = useState("Shanmukha");
+  const [username] = useState("Chris Hemsworth");
   const [count, setCount] = useState(0);
 
   return (
