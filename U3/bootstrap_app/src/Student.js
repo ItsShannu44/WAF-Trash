@@ -60,6 +60,7 @@ export default function Student() {
         </Modal.Header>
         <Modal.Body>
           <Form.Control />
+          
         </Modal.Body>
       </Modal>
     </Container>
