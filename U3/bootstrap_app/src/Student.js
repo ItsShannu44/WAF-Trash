@@ -58,7 +58,6 @@ export default function Student() {
         <Modal.Header>
           <Modal.Title>Edit Student</Modal.Title>
         </Modal.Header>
-
         <Modal.Body>
           <Form.Control />
         </Modal.Body>
