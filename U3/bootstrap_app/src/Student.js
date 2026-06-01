@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  Container,
-  Form,
-  Button,
-  Table,
-  Alert,
-  Modal
-} from "react-bootstrap";
+import {Container,Form,Button,Table,Alert,Modal} from "react-bootstrap";
 
 export default function Student() {
   const [students, setStudents] = useState([]);
@@ -60,7 +53,7 @@ export default function Student() {
         </Modal.Header>
         <Modal.Body>
           <Form.Control />
-          
+
         </Modal.Body>
       </Modal>
     </Container>
