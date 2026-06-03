@@ -1,12 +1,35 @@
-import { BrowserRouter } from "react-router-dom";
-import App from "./components/";
+import './App.css';
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function My_App() {
+import MyButton from './components/Button';
+//import ButtonOutline from './components/ButtonOutline';
+//import NavigationBar from "./components/Navigation";
+//import MyCard from "./components/Card";
+//import MyForm from "./components/Form";
+//import MyAlert from "./components/Alert";
+//import MyModal from "./components/Modal";
+
+function App() {
   return (
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <div className="App">
+      <header className="App-header"></header>
+        <MyButton/>
+        <hr/>
+  {/*Remove only a single component comment at a time*/}
+   {/*  <ButtonOutline />
+        <hr/>
+        <NavigationBar />
+        <hr/>
+        <MyCard/>
+        <hr/>
+        <MyForm/>
+        <hr/>
+        <MyAlert/>
+        <hr/>
+        <MyModal/> */}
+      </div>
   );
 }
 
-export default My_App;
+export default App;
