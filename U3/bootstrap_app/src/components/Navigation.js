@@ -27,8 +27,8 @@ function NavigationBar() {
         {/*Creates navigation links*/}
           <Nav className="ms-auto">
 
-            <Nav.Link href="#" Active>
-              Home
+            <Nav.Link href="https://www.pinterest.com" Active>
+              Pinterest
             </Nav.Link>
 
             <Nav.Link href="#">
