@@ -76,7 +76,7 @@ const UpdateUser = () => {
       <br /><br />
       <button onClick={handleUpdate}>
         Update User </button>
-    </div>
+    </div> 
   );
 };
 
