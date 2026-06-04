@@ -8,7 +8,6 @@ const UpdateUser = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-  // Function to Update User
   const handleUpdate = async () => {
     try {
       const updatedUser = {
