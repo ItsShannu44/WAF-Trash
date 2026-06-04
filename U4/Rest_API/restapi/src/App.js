@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import "./App.css"
 import ApiExample from './components/ApiExample';
 import CreateData from './components/CreateData';
 import DisplayData from "./components/DisplayData";
@@ -20,7 +21,7 @@ function App(){
     </div>
   )
 }
-
+export default App;
 
 
 
