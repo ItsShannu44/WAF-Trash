@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React, {useState} from "react";
 import './App.css';
+import FormValidation from "./components/FormValidation";
+import FilterList from "./components/FilterList";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [students, setStudents] = useState([
+      {id : 1, name: "Tom"},
+      {id : 2, name: "Nat"},
+      {id : 3, name: "Chris"},
+      {id : 4, name: "RDJ"},
+      {id : 5, name: "Mili"}
+    ])
+
+    const addStudent= (studentName)=>
+    {
+      setStudents([...students,
+        {
+          id: students.length+1,
+          name: studentName
+        }
+      ]);
+    };
+    return(
+      <div>
+        <header className="App-header">
+          <FormValidation addStudent={addStudent}/>
+          <FormValidation/>
+          <hr/>
+          <FilterList students={students}/>
+        </header>
+      </div>
+    );
 }
 
 export default App;
