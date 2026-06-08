@@ -17,7 +17,7 @@ async function main()
 
         const collection=db.collection(collectionName);
         const insertResult =
-        await collection.insertOne({ id : 1, name: 'Tom Holland' , age : 24});
+        await collection.insertOne({ id : 1, name: 'Vijayalakshmi' , age : 24});
         console.log("Document inserted:", insertResult.insertedId);
 
         const documents = await collection.find({}). toArray();
