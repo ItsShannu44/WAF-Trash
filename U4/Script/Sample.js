@@ -10,6 +10,17 @@ async function main() {
         const db=client.db("WAF"); 
         const users= db.collection("Table");
 
+        //Insert
+        await Table.insertOne({
+            name:"Alice",
+            age: 25
+        });
+
+        //Query
+        const user = await users.findOne({ name: "Alice"});
+        console.log(user);
+    }
+    finally{
         
     }
 }
