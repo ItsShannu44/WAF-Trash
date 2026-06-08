@@ -16,7 +16,13 @@ function FormValidation({addStudent})
             console.log(data);
             reset();
         };
-        
+        return(
+            <div>
+                <header >
+
+                </header>
+            </div>
+        );
         const addStudent =(studentName) =>
         {
             id: students.length+1,
