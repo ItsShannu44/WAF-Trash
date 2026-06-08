@@ -15,6 +15,10 @@ async function main() {
             name: "Alice",
             age: 25
         });
+        await users.insertOne({
+            name: "Amar",
+            age: 22
+        });
 
         // Query
         const user = await users.findOne({ name: "Alice" });
