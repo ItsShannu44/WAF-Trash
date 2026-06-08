@@ -21,7 +21,7 @@ async function main() {
         });
 
         // Query
-        const user = await users.findOne({ name: "Alice" });
+        const user = await users.findOne({name : "Amar"});
         console.log(user);
     } finally {
         await client.close();
