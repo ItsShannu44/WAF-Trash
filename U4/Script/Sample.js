@@ -1,26 +1,27 @@
-const {MongoClient} = require("mongodb");
+const { MongoClient } = require("mongodb");
 
 const url = "mongodb://localhost:27017";
-const client= new MongoClient(url);
+const client = new MongoClient(url);
 
 async function main() {
-    try{
+    try {
         await client.connect();
 
-        const db=client.db("WAF"); 
-        const users= db.collection("Table");
+        const db = client.db("WAF"); 
+        const users = db.collection("sample");
 
-        //Insert
-        await Table.insertOne({
-            name:"Alice",
+        // Insert
+        await users.insertOne({
+            name: "Alice",
             age: 25
         });
 
-        //Query
-        const user = await users.findOne({ name: "Alice"});
+        // Query
+        const user = await users.findOne({ name: "Alice" });
         console.log(user);
-    }
-    finally{
-        
+    } finally {
+        await client.close();
     }
 }
+
+main().catch(console.error);
